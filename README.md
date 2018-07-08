@@ -7,7 +7,7 @@ A Dockerized version of the file management utility [Organize](https://github.co
 - source: directory with files that you want to process
 - destination: directory for move and copy operations
 
-###Example
+### Example
 ```
 docker run -it
 	-v "/path/to/config/":/root/.config/organize/
