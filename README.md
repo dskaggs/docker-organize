@@ -16,7 +16,7 @@ docker run -it
 	docker-organize
 ```
 
-### CRONTAB Example
+## CRONTAB Example
 ```
 docker run -it
 	-v "/path/to/config/":/root/.config/organize/
