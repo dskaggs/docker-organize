@@ -7,5 +7,3 @@ if [ $# -eq 1 ]
   else
 	organize run && exit 0
 fi
-
-

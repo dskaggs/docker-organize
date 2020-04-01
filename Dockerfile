@@ -1,6 +1,5 @@
-FROM frolvlad/alpine-python3
+FROM python:3.8-slim
 
-RUN pip install --upgrade pip
 RUN pip3 install -U organize-tool
 
 COPY        scripts/entrypoint.sh /
