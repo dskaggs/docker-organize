@@ -1,6 +1,7 @@
 FROM python:3.8-slim
 
-RUN apt install cron
+RUN apt-get update
+RUN apt-get install cron -y
 RUN pip3 install -U organize-tool
 
 COPY        scripts/entrypoint.sh /
