@@ -1,9 +1,9 @@
 #!/bin/sh
-set -e
 
 if [ $# -eq 1 ]
   then
-    echo "$1" | crontab - && crond -f -L -
+    (crontab -l 2>/dev/null; echo "$1 /usr/local/bin/organize run >> /var/log/organize/organize.log 2>&1") | crontab -
+    service cron restart
   else
-	organize run && exit 0
+	  organize run && exit 0
 fi
