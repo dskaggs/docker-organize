@@ -23,7 +23,7 @@ docker run -it
 	-v "/source-folder/":/source
 	-v "/destination-folder/":/destination
 	docker-organize
-	"* * * * * organize run"
+	"* * * * *"
 ```
 
 The final line in the example above sets a crontab entry to run Organize once every minute.
