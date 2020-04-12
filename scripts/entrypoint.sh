@@ -6,5 +6,5 @@ if [ $# -eq 1 ]
     service cron restart
     /bin/bash
   else
-	  organize run && exit 0
+	  /usr/local/bin/organize run >> /var/log/organize/organize.log 2>&1 && exit 0
 fi
