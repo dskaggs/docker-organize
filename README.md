@@ -19,7 +19,7 @@ docker run -it
 
 ## CRONTAB Example
 ```
-docker run -it
+docker run -dit --rm --name docker-organize
 	-v "/path/to/config/":/root/.config/organize/
 	-v "/path/to/logs/":/var/log/organize/
 	-v "/source-folder/":/source
