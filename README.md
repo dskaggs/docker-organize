@@ -11,6 +11,7 @@ A Dockerized version of the file management utility [Organize](https://github.co
 ```
 docker run -it
 	-v "/path/to/config/":/root/.config/organize/
+	-v "/path/to/logs/":/var/log/organize/
 	-v "/source-folder/":/source
 	-v "/destination-folder/":/destination
 	docker-organize
@@ -20,6 +21,7 @@ docker run -it
 ```
 docker run -it
 	-v "/path/to/config/":/root/.config/organize/
+	-v "/path/to/logs/":/var/log/organize/
 	-v "/source-folder/":/source
 	-v "/destination-folder/":/destination
 	docker-organize
